@@ -1,0 +1,8 @@
+SELECT "Orders".id AS tracker,
+CASE
+WHEN "Orders".finished THEN 2
+WHEN cancelled = true THEN -1
+WHEN "Orders"."inDelivery" = true THEN 1
+ELSE 0
+END AS status
+FROM "Orders";
