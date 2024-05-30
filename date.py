@@ -11,3 +11,7 @@ body = {
         "BLACK"
     ]
 }
+
+headers = {
+    "Content-Type": "application/json"
+}
